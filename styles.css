@@ -115,3 +115,67 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
+
+:root{
+  --brand: hsl(30 75% 59%); 
+  --muted: #6b7280;
+  --bg: #f6f7fb;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.site-header, .site-footer {
+  background: var(--card);
+}
+
+.tagline {
+  color: var(--muted);
+}
+
+.card {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.color-demo .color-note {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.color-demo .muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.bg-sample {
+  width: 100%;
+  min-height: 80px;
+  background: linear-gradient(135deg, hsl(120 83% 96%), hsl(12 83% 92%));
+  border-radius: 10px;
+  color: #374151;
+}
+
+
+.inline-label {
+  display:inline-block;
+  padding:0.25rem 0.5rem;
+  border:1px solid;
+  border-radius:6px;
+  margin-right:0.25rem;
+}
+.inline-label.alt {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border: 3px dashed rgba(30,40,100,0.25);
+  border-radius: 6px;
+}
+
+
+.copy .title {
+ 
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
